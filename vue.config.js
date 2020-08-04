@@ -40,41 +40,41 @@ module.exports = {
     // lintOnSave: process.env.NODE_ENV === 'development',
     lintOnSave: false,
     productionSourceMap: false,
-    devServer: {
-        port: port,
-        open: true,
-        overlay: {
-            warnings: false,
-            errors: true
-        },
-        proxy: {
-            // change xxx-api/login => mock/login
-            // detail: https://cli.vuejs.org/config/#devserver-proxy
-            [process.env.VUE_APP_BASE_API]: {
-                target: `http://127.0.0.1:${port}/mock`,
-                changeOrigin: true,
-                pathRewrite: {
-                    ['^' + process.env.VUE_APP_BASE_API]: ''
-                }
-            },
-            // 配置esri的porxy，使用vue的proxy反向代理esri的proxy
-            '/proxy': {
-                target: process.env.VUE_PROXY_URL,
-                changeOrigin: true,
-                pathRewrite: {
-                    '^/proxy': ''
-                }
-            },
-            '/dev-api': {
-                target: 'http://172.17.0.156:8085',
-                changeOrigin: true,
-                pathRewrite: {
-                    '^/dev-api': ''
-                }
-            }
-        },
-        // after: require('./mock/mock-server.js')
-    },
+    // devServer: {
+    //     port: port,
+    //     open: true,
+    //     overlay: {
+    //         warnings: false,
+    //         errors: true
+    //     },
+    //     proxy: {
+    //         // change xxx-api/login => mock/login
+    //         // detail: https://cli.vuejs.org/config/#devserver-proxy
+    //         [process.env.VUE_APP_BASE_API]: {
+    //             target: `http://127.0.0.1:${port}/mock`,
+    //             changeOrigin: true,
+    //             pathRewrite: {
+    //                 ['^' + process.env.VUE_APP_BASE_API]: ''
+    //             }
+    //         },
+    //         // 配置esri的porxy，使用vue的proxy反向代理esri的proxy
+    //         '/proxy': {
+    //             target: process.env.VUE_PROXY_URL,
+    //             changeOrigin: true,
+    //             pathRewrite: {
+    //                 '^/proxy': ''
+    //             }
+    //         },
+    //         '/dev-api': {
+    //             target: 'http://172.17.0.156:8085',
+    //             changeOrigin: true,
+    //             pathRewrite: {
+    //                 '^/dev-api': ''
+    //             }
+    //         }
+    //     },
+    //     // after: require('./mock/mock-server.js')
+    // },
     configureWebpack: {
         plugins: [
             new ArcGISPlugin({
