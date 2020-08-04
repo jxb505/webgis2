@@ -1,0 +1,401 @@
+{
+    "map": {
+        "viewtype": "SceneView",
+        "type": "2D",
+        "mapOption": {
+            "viewingMode": "local"
+        },
+        "basemaps": [{
+            "label": "影像地图",
+            "type": "tile",
+            "url": "http://172.16.254.100:6080/arcgis/rest/services/CHDL/CHDL_2018DOM80CM_WXYX/MapServer",
+            "visible": true,
+            "updatetime": "2019.01.16",
+            "homePos": {
+                "x": 332222,
+                "y": 332222,
+                "z": 339000
+            }
+        }],
+        "groundlayer": [],
+        "operationallayers": [{
+                "label": "政务版电子地图标记",
+                "type": "njgeotile",
+                "url": "http://192.168.5.97:7001/NJDLGZJ08/wmts",
+                "layerid": "NJDLGDT08",
+                "visible": false
+            },
+            {
+                "label": "控规土地利用规划图_3D",
+                "_label": "控详土地利用规划图",
+                "type": "scene",
+                "url": "http://ag.njcim.gis03:6080/arcgis/rest/services/Hosted/kghz/SceneServer",
+                "visible": false
+            },
+            {
+                "label": "控规土地利用规划图",
+                "type": "dynamic",
+                "url": "http://192.168.7.55:6080/arcgis/rest/services/GIS/%E5%8D%97%E4%BA%AC%E5%B8%82%E8%A1%97%E9%81%93/MapServer",
+                "visible": false
+            },
+            {
+                "label": "城市精模",
+                "type": "scene",
+                "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/building0831/SceneServer",
+                "visible": false
+            },
+            {
+                "label": "山体模型",
+                "type": "scene",
+                "url": "https://server01.njcim.gis//arcgis/rest/services/Hosted/shanti/SceneServer",
+                "visible": false
+            },
+            {
+                "label": "道路模型",
+                "type": "scene",
+                "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/road0831/SceneServer",
+                "visible": false
+            },
+            {
+                "label": "树木模型",
+                "type": "scene",
+                "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/shumu0831change/SceneServer",
+                "visible": false
+            },
+            {
+                "label": "街区地块模型",
+                "type": "scene",
+                "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/Block0831/SceneServer",
+                "visible": false
+            },
+            {
+                "label": "水体模型",
+                "type": "scene",
+                "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/shuiti/SceneServer",
+                "visible": false
+            },
+            {
+                "label": "电子地图",
+                "type": "njgeotile",
+                "url": "http://192.168.5.77:80/geostar/NJDLGDT08/wmts",
+                "layerid": "NJDLGDT08",
+                "tileMatrixSet": "Matrix_2",
+                "styleid": "NJDLGDT08",
+                "visible": false
+            },
+            {
+                "label": "南京市街道",
+                "type": "dynamic",
+                "url": "http://192.168.7.55:6080/arcgis/rest/services/GIS/%E5%8D%97%E4%BA%AC%E5%B8%82%E8%A1%97%E9%81%93/MapServer",
+                "visible": false
+            },
+            {
+                "label": "两规均为建设用地",
+                "type": "tile",
+                "url": "http://192.168.5.202:6080/arcgis/rest/services/DGCG/DGCG_LGJS_08Tiled/MapServer",
+                "visible": false,
+                "updatetime": "2017.09.12"
+            },
+            {
+                "label": "土规非建-城规建设",
+                "type": "tile",
+                "url": "http://192.168.5.202:6080/arcgis/rest/services/DGCG/DGCG_TGFJ_CGJ_08Tiled/MapServer/",
+                "visible": false,
+                "updatetime": "2017.09.12"
+            },
+            {
+                "label": "土规建设-城规非建",
+                "type": "tile",
+                "url": "http://192.168.5.202:6080/arcgis/rest/services/DGCG/DGCG_TGJ_CGFJ_08Tiled/MapServer/",
+                "visible": false,
+                "updatetime": "2017.09.12"
+            },
+            {
+                "label": "两规均为非建设用地",
+                "type": "tile",
+                "url": "http://192.168.5.202:6080/arcgis/rest/services/DGCG/DGCG_LGFJ_08Tiled/MapServer/",
+                "visible": false,
+                "updatetime": "2017.09.12"
+            },
+            {
+                "label": "控制线冲突检测",
+                "type": "tile",
+                "url": "http://192.168.5.202:6080/arcgis/rest/services/DGCG/DGCG_KZXCTJC_08Tiled/MapServer/",
+                "visible": false,
+                "updatetime": "2017.09.12"
+            },
+            {
+                "label": "冲突图斑",
+                "type": "tile",
+                "url": "http://192.168.5.202:6080/arcgis/rest/services/DGCG/DGCG_CTTB_08Tiled/MapServer/",
+                "visible": false,
+                "updatetime": "2017.09.12"
+            },
+            {
+                "label": "无冲突图斑",
+                "type": "tile",
+                "url": "http://192.168.5.202:6080/arcgis/rest/services/DGCG/DGCG_WCTTB_08Tiled/MapServer/",
+                "visible": false,
+                "updatetime": "2017.09.12"
+            },
+            {
+                "label": "南京市行政区划区界",
+                "type": "feature",
+                "url": "https://192.168.5.128:8081/arcgis/rest/services/XZQH/XZQ_QJ_08/MapServer/0",
+                "visible": false
+            },
+            {
+                "label": "南京市行政区划镇界",
+                "type": "dynamic",
+                "url": "http://192.168.5.202:6080/arcgis/rest/services/XZQH/XZQ_ZJ_08/MapServer/",
+                "visible": false
+            },
+            {
+                "label": "2019年12月南京市第三次优化上报",
+                "type": "dynamic",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/2019%E5%B9%B412%E6%9C%88%E5%8D%97%E4%BA%AC%E5%B8%82%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BC%98%E5%8C%96%E4%B8%8A%E6%8A%A5/MapServer",
+                "visible": false
+            },
+            {
+                "label": "2019年8月省下发优化基准 ",
+                "type": "dynamic",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/2019%E5%B9%B48%E6%9C%88%E7%9C%81%E4%B8%8B%E5%8F%91%E4%BC%98%E5%8C%96%E5%9F%BA%E5%87%86/MapServer",
+                "visible": false
+            },
+            {
+                "label": "两规差异比对",
+                "type": "tile",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/%E4%B8%A4%E8%A7%84%E5%B7%AE%E5%BC%82%E6%AF%94%E5%AF%B9/MapServer",
+                "visible": false
+            },
+            {
+                "label": "国家级生态保护红线",
+                "type": "dynamic",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/%E5%9B%BD%E5%AE%B6%E7%BA%A7%E7%94%9F%E6%80%81%E4%BF%9D%E6%8A%A4%E7%BA%A2%E7%BA%BF_%E5%B8%82%E7%94%9F%E6%80%81%E7%8E%AF%E5%A2%83%E5%B1%80%E4%B8%8A%E6%8A%A5%E7%A8%BF/MapServer",
+                "visible": false
+            },
+            {
+                "label": "城市总体规划",
+                "type": "dynamic",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/%E5%9F%8E%E5%B8%82%E6%80%BB%E4%BD%93%E8%A7%84%E5%88%92/MapServer",
+                "visible": false
+            },
+            {
+                "label": "城镇开发边界2020",
+                "type": "dynamic",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/%E5%9F%8E%E9%95%87%E5%BC%80%E5%8F%91%E8%BE%B9%E7%95%8C2020/MapServer",
+                "visible": false
+            },
+            {
+                "label": "集中建设用地2035",
+                "type": "dynamic",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/%E9%9B%86%E4%B8%AD%E5%BB%BA%E8%AE%BE%E7%94%A8%E5%9C%B02035/MapServer",
+                "visible": false
+            },
+            {
+                "label": "建设用地管制区",
+                "type": "dynamic",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/%E5%BB%BA%E8%AE%BE%E7%94%A8%E5%9C%B0%E7%AE%A1%E5%88%B6%E5%8C%BA/MapServer",
+                "visible": false
+            },
+            {
+                "label": "永久基本农田",
+                "type": "dynamic",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/%E6%B0%B8%E4%B9%85%E5%9F%BA%E6%9C%AC%E5%86%9C%E7%94%B0/MapServer",
+                "visible": false
+            },
+            {
+                "label": "省级生态红线区域（2013批复稿）",
+                "type": "dynamic",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/%E7%9C%81%E7%BA%A7%E7%94%9F%E6%80%81%E4%BF%9D%E6%8A%A4%E7%BA%A2%E7%BA%BF_2013%E5%B9%B4%E6%89%B9%E5%A4%8D/MapServer",
+                "visible": false
+            },
+            {
+                "label": "省级生态保护红线（2015年调整上报）",
+                "type": "dynamic",
+                "url": "http://192.168.7.189:6080/arcgis/rest/services/DgTemp/%E7%9C%81%E7%BA%A7%E7%94%9F%E6%80%81%E4%BF%9D%E6%8A%A4%E7%BA%A2%E7%BA%BF_%E5%B8%82%E7%94%9F%E6%80%81%E7%8E%AF%E5%A2%83%E5%B1%80%E4%B8%8A%E6%8A%A5%E7%A8%BF/MapServer",
+                "visible": false
+            }
+        ]
+    },
+    "webService": {
+        "建设用地审批": "http://192.168.100.55:6080/arcgis/rest/services/%E5%9C%B0%E6%94%BF%E9%A1%B9%E7%9B%AE/%E5%BB%BA%E8%AE%BE%E7%94%A8%E5%9C%B0%E6%8A%A5%E6%89%B9/MapServer",
+        "titldemo": "http://cache1.arcgisonline.cn/arcgis/rest/services/SimpleFeature/ChinaBoundaryLine/MapServer",
+        "ReadStatisticsResult": {
+            "url": "https://192.168.5.163/NJDGHY/Handlers/StatsForJsonHandler.ashx"
+        },
+        "ThemticCarto": {
+            "describe": "专题制图soe接口地址",
+            "url": "http://192.168.100.123:6080/arcgis/rest/services/SampleWorldCities/MapServer/exts/DLGAnalysisRestSOE/ThemticCarto"
+        }
+    },
+    "widgetOnScreen": {
+        "widgets": [{
+                "id": "sidebar",
+                "uri": "/layout/theme_origin/components/Sidebar/",
+                "hasConfig": true,
+                "type": "container",
+                "label": "主菜单",
+                "icon": "example"
+            },
+            {
+                "id": "navbar",
+                "uri": "/layout/theme_origin/components/Navbar/",
+                "hasConfig": false,
+                "label": "导航栏"
+            },
+            {
+                "id": "taskbar",
+                "uri": "/layout/theme_origin/components/Taskbar/",
+                "hasConfig": false,
+                "label": "任务栏"
+            },
+            {
+                "id": "toolbox",
+                "label": "工具箱",
+                "uri": "/components/Toolbox/",
+                "hasConfig": true,
+                "viewtype": "2D",
+                "position": "top-right"
+            },
+            {
+                "id": "identifysearch",
+                "label": "i查询",
+                "uri": "/components/IdentifySearch/",
+                "hasConfig": true,
+                "inPanel": true,
+                "viewtype": "2D",
+                "panel": {
+                    "position": {
+                        "right": 150,
+                        "top": 100,
+                        "width": 300,
+                        "height": 500
+                    }
+                },
+                "iconfont": "ds-isearch",
+                "position": "top-right"
+            },
+            {
+                "id": "mapcontrolbox",
+                "label": "地图控件",
+                "viewtype": "3D",
+                "uri": "/components/MapControlBox/",
+                "hasConfig": false,
+                "position": "right-top"
+            },
+            {
+                "id": "rightmenu",
+                "label": "右侧菜单",
+                "viewtype": "3D",
+                "uri": "/components/RightMenu/",
+                "hasConfig": false,
+                "position": "right-top"
+            },
+            {
+                "id": "wrapper",
+                "label": "底图切换",
+                "uri": "/components/Wrapper/",
+                "hasConfig": false,
+                "position": "bottom-right"
+            },
+            {
+                "id": "viewswitch",
+                "label": "视图改变",
+                "uri": "/components/ViewSwitch/",
+                "hasConfig": false,
+                "position": "right-bottom"
+            },
+            {
+                "id": "legend",
+                "label": "图例",
+                "uri": "/components/Legend/",
+                "hasConfig": true,
+                "inPanel": true,
+                "viewtype": "2D",
+                "panel": {
+                    "position": {
+                        "right": 50,
+                        "bottom": 100,
+                        "width": 300,
+                        "height": 400
+                    }
+                },
+                "iconfont": "ds-map_tool_tuli",
+                "position": "right-bottom"
+            },
+            {
+                "id": "home",
+                "label": "全图",
+                "uri": "/components/Home/",
+                "hasConfig": false,
+                "inPanel": false,
+                "viewtype": "2D",
+                "iconfont": "ds-map_tool_quantu",
+                "position": "right-bottom"
+            },
+            {
+                "id": "layerlist",
+                "label": "图层列表",
+                "uri": "/components/Layerlist/",
+                "hasConfig": false,
+                "inPanel": true,
+                "viewtype": "2D",
+                "panel": {
+                    "position": {
+                        "right": 50,
+                        "bottom": 200,
+                        "width": 300,
+                        "height": 300
+                    }
+                },
+                "iconfont": "ds-map_tool_tucen",
+                "position": "right-bottom"
+            },
+            {
+                "id": "splitmap",
+                "label": "分屏",
+                "uri": "/components/SplitMap/",
+                "hasConfig": true,
+                "inPanel": true,
+                "viewtype": "2D",
+                "panel": {
+                    "position": {
+                        "right": 60,
+                        "bottom": 290,
+                        "width": 300,
+                        "height": 500
+                    }
+                },
+                "iconfont": "ds-map_tool_fenping",
+                "position": "right-bottom"
+            },
+            {
+                "id": "bulletin",
+                "label": "公告栏",
+                "uri": "/components/Bulletin/",
+                "hasConfig": false,
+                "inPanel": true,
+                "viewtype": "2D",
+                "panel": {
+                    "position": {
+                        "right": 50,
+                        "bottom": 150,
+                        "width": 300,
+                        "height": 400
+                    }
+                },
+                "iconfont": "ds-shebeixinxi",
+                "position": "right-bottom"
+            },
+            {
+                "id": "bottomtoolbar",
+                "viewtype": "3D",
+                "label": "底部菜单",
+                "uri": "/components/BottomToolbar/",
+                "hasConfig": false,
+                "position": "bottom-right"
+            }
+        ]
+    }
+}

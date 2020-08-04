@@ -1,0 +1,235 @@
+{
+    "soe": "ThemticCarto",
+    "menu": [
+        {
+            "title": "选择专题图模板",
+            "description": ""
+        }, {
+            "title": "设置专题图数据",
+            "description": ""
+        }, {
+            "title": "设置专题图符号",
+            "description": ""
+        }, {
+            "title": "打印预览及输出",
+            "description": ""
+        }
+    ],
+    "selectOpt": [
+        [
+            {
+                "picurl": "建设用地总规模统计分布图",
+                "category": "符号分段图 - 点（符号大小计数和数量）",
+                "text_title": "建设用地总规模专题图",
+                "labels": [
+                    "lab_zb", "lab_ztgh"
+                ],
+                "CartoScheme": "符号分段图-点",
+                "gType": "point",
+                "text_xq": "建设用地总规模显示的是行政区内各市建设用地的分布情况，通过柱状图符号..."
+            }, {
+                "picurl": "耕地保有量统计分布图",
+                "category": " ",
+                "text_title": "耕地保有量专题图",
+                "labels": [
+                    "lab_zb", "lab_ztgh"
+                ],
+                "CartoScheme": "符号分段图-点",
+                "gType": "point",
+                "text_xq": "耕地保有量显示的是行政区内各市耕地保有量的分布情况，通过柱状图符号..."
+            }, {
+                "picurl": "生态保护红线范围内建设用地面积",
+                "category": " ",
+                "text_title": "生态保护红线范围内建设用地面积专题图",
+                "labels": [
+                    "lab_zb", "lab_ztgh"
+                ],
+                "CartoScheme": "符号分段图-点",
+                "gType": "point",
+                "text_xq": "生态保护红线范围内建设用地面积专题图显示的是行政区内各市生态红线内.."
+            }, {
+                "picurl": "国土开发强度专题图",
+                "category": " ",
+                "text_title": "国土开发强度专题图",
+                "labels": [
+                    "lab_zb", "lab_ztgh"
+                ],
+                "CartoScheme": "符号分段图-点",
+                "gType": "point",
+                "text_xq": "国土开发强度专题图显示的是行政区内各国土开发强度的情况，通过柱状图..."
+            }
+        ],
+        [
+            {
+                "picurl": "行政区划图",
+                "category": "唯一值渲染（唯一符号）",
+                "text_title": "行政区划图",
+                "labels": ["lab_xzqh"],
+                "CartoScheme": "符号分段图-面",
+                "gType": "polygon",
+                "text_xq": "行政区划图显示的是行政区内各行政区的分布情况，通过唯一值渲染各市..."
+            }, {
+                "picurl": "土地利用现状图",
+                "category": " ",
+                "text_title": "土地利用现状图",
+                "labels": ["lab_ztgh"],
+                "CartoScheme": "符号分段图-面",
+                "gType": "polygon",
+                "text_xq": "土地利用现状图显示的是行政区内各市土地利用现状的情况，通过唯一值渲染..."
+            }, {
+                "picurl": "土壤类型分布图",
+                "category": "色带分段图（颜色计数和数量）",
+                "text_title": "土壤类型分布图",
+                "labels": ["lab_hb"],
+                "CartoScheme": "CartoScheme",
+                "gType": "polygon",
+                "text_xq": "土壤类型分布图显示的是行政区内各市土壤类型分布情况，通过色带分段..."
+            }, {
+                "picurl": "社会经济统计示意图",
+                "category": " ",
+                "text_title": "社会经济统计示意图",
+                "labels": ["lab_jj"],
+                "CartoScheme": "CartoScheme",
+                "gType": "polygon",
+                "text_xq": "社会经济统计示意图显示的是行政区内各市社会经济统计情况，通过色带分段..."
+            }
+        ],
+        [
+            {
+                "picurl": "中小学分布示意图",
+                "category": "热点图",
+                "text_title": "中小学分布示意图",
+                "labels": ["lab_jy"],
+                "CartoScheme": "CartoScheme",
+                "gType": "point",
+                "text_xq": "根据不同区域的位置（经纬度）数据，进行不同程度的颜色填充，从而反映中..."
+            }, {
+                "picurl": "道路路网密度示意图",
+                "category": " ",
+                "text_title": "道路路网密度示意图",
+                "labels": ["lab_jt"],
+                "CartoScheme": "CartoScheme",
+                "gType": "point",
+                "text_xq": "根据不同区域的位置（经纬度）数据，进行不同程度的颜色填充，从而反映..."
+            }, {
+                "picurl": "高校分布示意图",
+                "category": "位置分布图（单一符号）",
+                "text_title": "高校分布示意图",
+                "labels": ["lab_jy"],
+                "CartoScheme": "CartoScheme",
+                "gType": "point",
+                "text_xq": "高校分布示意图显示的是行政区内各市高校的分布情况，通过点符号显示..."
+            }, {
+                "picurl": "公园分布示意图",
+                "category": " ",
+                "text_title": "公园分布示意图",
+                "labels": ["lab_yl"],
+                "CartoScheme": "CartoScheme",
+                "gType": "point",
+                "text_xq": "公园分布示意图显示的是行政区内各市公园的分布情况，通过点符号显示..."
+            }
+        ]
+    ],
+    "dataSourceTypeOpt": [
+        {
+            "label": "excel",
+            "value": "excel"
+        }, {
+            "label": "shp",
+            "value": "shp"
+        }
+    ],
+    "directionOpt": [
+        {
+            "label": "横向",
+            "value": "H"
+        }, {
+            "label": "纵向",
+            "value": "V"
+        }
+    ],
+    "paperOpt": [
+        {
+            "label": "A3",
+            "value": "A3"
+        }, {
+            "label": "A4",
+            "value": "A4"
+        }
+    ],
+    "dpiOpt": [
+        {
+            "label": 96,
+            "value": 96
+        }, {
+            "label": 300,
+            "value": 300
+        }
+    ],
+    "formatOpt": [
+        {
+            "label": "pdf",
+            "value": "pdf"
+        }
+    ],
+    "GroupTree": [
+        {
+            "title": "调查评价",
+            "children": [
+                {
+                    "title": "土地利用现状",
+                    "children": [
+                        {
+                            "title": "2009年",
+                            "label": "2009年土地利用现状"
+                        }, {
+                            "title": "2010年",
+                            "label": "2010年土地利用现状"
+                        }, {
+                            "title": "2011年",
+                            "label": "2011年土地利用现状"
+                        }, {
+                            "title": "2014年",
+                            "label": "2014年土地利用现状"
+                        }
+                    ],
+                    "label": "土地利用现状"
+                }, {
+                    "title": "test_1",
+                    "children": [
+                        {
+                            "title": "test_sas",
+                            "label": "test_new"
+                        }
+                    ],
+                    "label": "test_1"
+                }
+            ],
+            "label": "调查评价"
+        }, {
+            "title": "test",
+            "children": [
+                {
+                    "title": "test1",
+                    "children": [],
+                    "label": "test1"
+                }, {
+                    "title": "zt",
+                    "children": [
+                        {
+                            "title": "test_new",
+                            "expand": {
+                                "yscx": {
+                                    "图层扩展参数": "e"
+                                }
+                            },
+                            "label": "test_new"
+                        }
+                    ],
+                    "label": "zt"
+                }
+            ],
+            "label": "test"
+        }
+    ]
+}

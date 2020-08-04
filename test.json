@@ -1,0 +1,22 @@
+{
+    "ProjectArray":[{"CheckType":["控制线检测","各部门现行规划检测"],
+        "DataType":"JSON",
+        "Project":{"ProjectName":"",
+            "ProjectID":"",
+            "ProjectType":"",
+            "Geometry":{
+                "type":"polygon",
+                "rings":[[[326698.1024570835,346393.8894668643],[330023.1131874887,345935.2672971532],[328226.84302278707,343795.03050516825],[326698.1024570835,346393.8894668643]]],
+                "_ring":0,
+                "spatialReference":{"wkt":"PROJCS[\"NJ08_118_50_CM\",GEOGCS[\"GCS_GRS_1980\",DATUM[\"D_GRS_1980\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Gauss_Kruger\"],PARAMETER[\"False_Easting\",500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",118.8333333333333],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]"},
+                "cache":{
+                    "_extent":{
+                        "xmin":326698.1024570835,
+                        "ymin":343795.03050516825,
+                        "xmax":330023.1131874887,
+                        "ymax":346393.8894668643,
+                        "spatialReference":{
+                            "wkt":"PROJCS[\"NJ08_118_50_CM\",GEOGCS[\"GCS_GRS_1980\",DATUM[\"D_GRS_1980\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Gauss_Kruger\"],PARAMETER[\"False_Easting\",500000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",118.8333333333333],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]"}},
+                            "_partwise":null,
+                            "_geVersion":{
+                                "description":{"de":[0,0],"Rq":[0],"sa":1,"jp":2,"Af":[0],"Og":[0,-1,-1,-1,-1,-1,-1,-1,-1,-1],"lk":2086473605},"Mx":12884901894,"tl":16776991,"ma":3,"hg":5,"ib":null,"Pf":true,"cp":null,"So":0,"Ro":0,"Mh":null,"dg":false,"bb":{"Of":false,"La":false,"d":{"0":0,"1":3},"size":2},"jb":{"d":{"0":1,"1":0},"size":2},"we":null,"di":null,"ld":null,"To":0,"Ja":0,"Wo":0,"ua":[{"Of":false,"La":false,"d":{"0":326698.1024570835,"1":346393.8894668643,"2":330023.1131874887,"3":345935.2672971532,"4":328226.84302278707,"5":343795.03050516825,"6":0,"7":0,"8":0,"9":0},"size":10}],"I":{"description":{"de":[0,0],"Rq":[0],"sa":1,"jp":2,"Af":[0],"Og":[0,-1,-1,-1,-1,-1,-1,-1,-1,-1],"lk":2086473605},"Mx":8589934596,"I":{"o":326698.1024570835,"s":343795.03050516825,"r":330023.1131874887,"v":346393.8894668643}}}}}}}]}

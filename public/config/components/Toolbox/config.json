@@ -1,0 +1,101 @@
+{
+    "toolList": [
+        {
+            "id": "distancemeasure",
+            "uri": "/components/Measurement/",
+            "label": "测量",
+            "hasConfig": false,
+            "type": "widget",
+            "icon": "iconfont ds-map_tool_celiang",
+            "panel": {
+                "position": {
+                    "right": 10,
+                    "top": 53,
+                    "width": 350,
+                    "height": 400
+                }
+            }
+        },
+        {
+            "id": "DrawMarkers",
+            "uri": "/components/DrawMarkers/",
+            "label": "标注",
+            "hasConfig": false,
+            "type": "widget",
+            "icon": "el-icon-s-flag",
+            "panel": {
+                "position": {
+                    "right": 10,
+                    "top": 53,
+                    "width": 350,
+                    "height": 400
+                }
+            }
+        },
+        {
+            "id": "screenshot",
+            "label": "截屏",
+            "uri": "/components/Screenshot/",
+            "icon": "iconfont ds-map_tool_jietu",
+            "hasConfig": false,
+            "type": "widget",
+            "panel": {
+                "position": {
+                    "right": 10,
+                    "top": 53,
+                    "width": 350,
+                    "height": 400
+                }
+            }
+        },
+        {
+            "id": "location",
+            "label": "定位",
+            "uri": "/components/Location/",
+            "icon": "iconfont ds-dingwei1",
+            "hasConfig": false,
+            "type": "widget",
+            "panel": {
+                "position": {
+                    "right": 10,
+                    "top": 53,
+                    "width": 350,
+                    "height": 200
+                }
+            }
+        },
+        {
+            "id": "importcad",
+            "label": "叠加CAD",
+            "uri": "/components/ImportCAD/",
+            "icon": "iconfont ds-map_tool_dietu",
+            "hasConfig": false,
+            "type": "widget",
+            "panel": {
+                "position": {
+                    "right": 10,
+                    "top": 53,
+                    "width": 350,
+                    "height": 450
+                }
+            }
+        },
+        {
+            "id": "upload",
+            "label": "导入",
+            "uri": "/components/Upload/",
+            "icon": "iconfont ds-map_tool_daoru",
+            "hasConfig": false,
+            "type": "widget"
+        },
+        {
+            "id": "bookmarks",
+            "label": "书签",
+            "uri": "/components/BookMarks/",
+            "icon": "el-icon-s-management",
+            "hasConfig": false,
+            "type": "widget"
+        }
+    ],
+    "toolListInSplit": ["distancemeasure", "DrawMarkers"]
+}

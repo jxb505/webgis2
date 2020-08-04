@@ -1,0 +1,55 @@
+{
+    "remainWidgetList": {
+        "widgets": [
+            {
+                "id": "toolbox",
+                "position": "top-right"
+            },
+            {
+                "id": "identifysearch",
+                "position": "top-right"
+            },
+            {
+                "id": "splitmap-restore",
+                "label": "退出分屏",
+                "uri": "/components/SplitMap/Subcomponents/Restore/",
+                "hasConfig": false,
+                "inPanel": false,
+                "iconfont": "ds-zhifangkuang",
+                "position": "right-bottom"
+            },
+            {
+                "id": "home",
+                "position": null
+            }
+        ]
+    },
+    "commonWidgetList": [
+        {
+            "id": "split-layerlist",
+            "label": "分屏图层控制",
+            "uri": "/components/SplitMap/Subcomponents/LayerList/",
+            "hasConfig": true,
+            "configPath": "views/DataCenter_eh/config.json",
+            "inPanel": false,
+            "position": "top"
+        },
+        {
+            "id": "split-legend",
+            "label": "图例",
+            "uri": "/components/SplitMap/Subcomponents/Legend/",
+            "hasConfig": true,
+            "configPath": "components/SplitMap/config.json",
+            "inPanel": false,
+            "iconfont": "ds-map_tool_tuli",
+            "position": "right-bottom"
+        },
+        {
+            "id": "split-wrapper",
+            "label": "底图切换",
+            "uri": "/components/SplitMap/Subcomponents/Wrapper/",
+            "hasConfig": false,
+            "position": "bottom-right"
+        }
+    ]
+}

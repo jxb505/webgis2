@@ -1,0 +1,111 @@
+{
+    "WidgetsList": [
+        {
+            "id": "sjzx",
+            "uri": "/views/DataCenter/",
+            "hasConfig": true,
+            "type": "widget",
+            "label": "一张蓝图",
+            "icon": "sjzx"
+        },
+        {
+            "id": "dataquery",
+            "uri": "/views/DataQuery/",
+            "type": "container",
+            "hasConfig": false,
+            "label": "信息查询",
+            "icon": "xxcx"
+        },
+        {
+            "id": "xmsc",
+            "uri": "/views/ProjectExamination/",
+            "type": "widget",
+            "hasConfig": true,
+            "label": "项目审查",
+            "icon": "xmsc"
+        },
+        {
+            "id": "varianceanalysis",
+            "uri": "/views/VarianceAnalysis/",
+            "type": "widget",
+            "hasConfig": false,
+            "label": "差异分析",
+            "icon": "cyfx"
+        },
+        {
+            "id": "tjfx",
+            "icon": "tjfx",
+            "uri": "/views/Multimenu/",
+            "hasConfig": true,
+            "type": "container",
+            "label": "统计分析",
+            "children": [{
+                    "id": "statistics_tgtzqk",
+                    "uri": "/views/Statistics_tgtzqk/",
+                    "label": "土规调整情况",
+                    "icon": "newb01"
+                },
+                {
+                    "id": "statistics_cgtzqk",
+                    "uri": "/views/Statistics_cgtzqk/",
+                    "label": "城规调整情况",
+                    "icon": "newb02"
+                },
+                {
+                    "id": "statistics_cxghyzt",
+                    "uri": "/views/Statistics_cxghyzt/",
+                    "label": "城乡规划一张图",
+                    "icon": "newb03"
+                },
+                {
+                    "id": "statistics_tdytq",
+                    "uri": "/views/Statistics_tdytq/",
+                    "label": "土地用途区",
+                    "icon": "newb04"
+                },
+                {
+                    "id": "statistics_tdlygh",
+                    "uri":"/views/Statistics_tdlygh/",
+                    "label": "土地利用规划",
+                    "icon": "newb05"
+                },
+                {
+                    "id": "statistics_gzfqgh",
+                    "uri": "/views/Statistics_gzfqgh/",
+                    "label": "管制分区规划",
+                    "icon": "newb06"
+                },
+                {
+                    "id": "statistics_sthx",
+                    "uri": "/views/Statistics_sthx/",
+                    "label": "生态红线",
+                    "icon": "newb07"
+                }
+            ]
+        },
+        {
+            "id": "locationsupport",
+            "uri": "/views/LocationSupport/",
+            "type": "widget",
+            "hasConfig": true,
+            "icon": "fzxz",
+            "label": "辅助选址"
+        },
+        {
+            "id": "tcsc",
+            "uri": "/views/ThematicMapTemplate/",
+            "type": "widget",
+            "hasConfig": true,
+            "icon": "tcsc",
+            "label": "图层收藏"
+        },
+        {
+            "id": "zlgl",
+            "uri": "/views/DataManager/",
+            "type": "widget",
+            "hasConfig": true,
+            "icon": "zlgl",
+            "label": "资料管理"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "SchemeID": "TZ_gzfqghtj",
+    "keyword": "SchemeName",
+    "xzq": "行政区",
+    "XZQSingle": true,
+    "isSum": true,
+    "barTypeXZQ": true,
+
+    "-----------------": "----//{optional}//饼图展示字段------",
+    "pieword": "面积",
+    "filter":["总计"],
+    "legendZD": [
+        {
+          "城乡建设用地": "城乡建设用地_面积"
+        },
+        {
+          "非城乡建设用地": "非城乡建设用地_面积"
+        }
+    ],
+
+    "-------------------": "----//{optional}//指定请求地址/对应主配置文件的地址名称------",
+    "soe": "ReadStatisticsResult",
+
+    "tableTH": [
+        {
+            "field": "行政区",
+            "label": "行政区"
+        }, {
+            "field": "",
+            "label": "城乡建设用地",
+            "childlist": [
+                {
+                    "field": "城乡建设用地_个数",
+                    "label": "图斑数量（个）"
+                }, {
+                    "field": "城乡建设用地_面积",
+                    "label": "图斑面积（公顷）"
+                }, {
+                    "field": "城乡建设用地_占比",
+                    "label": "面积比例（%）"
+                }
+            ]
+        }, {
+            "field": "",
+            "label": "非城乡建设用地",
+            "childlist": [
+                {
+                    "field": "非城乡建设用地_个数",
+                    "label": "图斑数量（个）"
+                }, {
+                    "field": "非城乡建设用地_面积",
+                    "label": "图斑面积（公顷）"
+                }, {
+                    "field": "非城乡建设用地_占比",
+                    "label": "面积比例（%）"
+                }
+            ]
+        }
+    ]
+}

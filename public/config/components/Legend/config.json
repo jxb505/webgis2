@@ -1,0 +1,18 @@
+{
+    "customsizeLayers": [
+        {
+            "layerName": "test",
+            "layerOptions": [
+                {
+                    "label": "test",
+                    "legends": [
+                        {
+                            "label": "test",
+                            "img": "http://192.168.33.91:8081/iis/baseline_4/images/Legend/test.png"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

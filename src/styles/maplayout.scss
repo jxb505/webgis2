@@ -1,0 +1,140 @@
+.layout-container {
+    .components-container>* {
+        box-shadow: 2px 2px 8px 0px rgba(196, 199, 204, 1);
+
+        .el-checkbox-button__inner,
+        .el-button {
+            background-color: rgba($color: #fff, $alpha: 0.8);
+        }
+
+        .el-checkbox-button.is-checked .el-checkbox-button__inner {
+            color: #409eff;
+        }
+
+        // opacity: 0.7;
+    }
+}
+
+// map-btn
+$large: 48px;
+$normal: 36px;
+
+.map-button {
+    &.large {
+        width: $large;
+        height: $large;
+    }
+
+    &.normal {
+        width: $normal;
+        height: $normal;
+    }
+
+    .btn {
+        width: 100%;
+        height: 100%;
+        margin: unset;
+        background: initial;
+
+        .el-checkbox-button__inner,
+        &.el-button {
+            padding: unset;
+            width: 100%;
+            height: 100%;
+            border: unset;
+
+            // font-size: 36px;
+            .iconfont,
+            .el-icon {
+                &.large {
+                    font-size: $large * 2/3;
+                    line-height: $large;
+                }
+
+                &.normal {
+                    font-size: $normal * 2/3;
+                    line-height: $normal;
+                }
+            }
+        }
+    }
+
+    .el-checkbox-button:last-child .el-checkbox-button__inner {
+        border-radius: 4px;
+    }
+}
+
+//map-panel
+.map-panel {
+    box-shadow: 0px 0px 1px 0px #dddddd;
+    border-radius: 5px;
+    overflow: hidden;
+    top:50px !important;
+}
+
+//split-layerlist
+.split-operator-popover {
+    height: 400px;
+    overflow: auto;
+
+    &[x-placement^='bottom'] {
+        margin-top: 0;
+        background-color: #00000099;
+        opacity: unset;
+        /* width: 150px; */
+        padding: 12px 0;
+        border-top: none;
+        border-radius: 0 0 4px 4px;
+    }
+
+    .split-operator-tree {
+        min-width: 300px;
+        background-color: transparent;
+        color: #36d8ff;
+        text-shadow: 0 0 1px #fff;
+
+        .is-current.is-leaf,
+        .el-tree-node__content:hover {
+            background-color: #36d8ff;
+            color: #fff;
+        }
+
+        .el-tree-node__expand-icon.is-leaf {
+            opacity: 0;
+        }
+
+        .custom-tree-node {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .timeExtent {
+            background-color: #666666;
+            border: none;
+            border-radius: unset;
+            /* width: 30px; */
+            /* padding: 0; */
+            height: 100%;
+            /* right: 0; */
+            /* display: inline-block; */
+            position: relative;
+
+            /* pointer-events: none; */
+            &:hover {
+                font-size: 14px;
+                background-color: #36d8ff;
+
+                .time-extent-btn {
+                    color: #fff;
+                }
+            }
+
+            .time-extent-btn {
+                font-size: 14px;
+                color: #36d8ff;
+            }
+        }
+    }
+}

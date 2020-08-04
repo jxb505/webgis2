@@ -1,0 +1,18 @@
+#app {
+  .htoolbar-container {
+    position: absolute;
+    top: 58px;
+    right: 10px;
+    height: 34px;
+    min-width: 110px;
+    border: $toolbarBd;
+  }
+
+  .htoolbar-item {
+    width: $toolItemWidth !important;
+    background-color: $toolItemBg;
+  }
+  .htoolbar-item:hover {    
+    background-color: $toolItemHover;
+  }
+}

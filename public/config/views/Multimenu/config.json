@@ -1,0 +1,527 @@
+{
+    "statistics_cgtzqk": {
+        "name":"城规调整情况",
+        "url":"https://192.168.5.163/NJDGHY/Handlers/StatsForJsonHandler.ashx?type=cgtzqk",
+        "color":"",
+        "visibleLayer":"",
+        "----": "---------方案名称------",
+        "SchemeID": "TZ_cgtzqk",
+        "------": "----SchemeName/tableName-----方案名称//{optional}//请求关键字，默认SchemeName------",
+        "keyword": "SchemeName",
+        "--------": "----地图服务、支持多个------",
+        "mapServer": [],
+        "bartitle": "单位：公顷",
+        "pietitle": "",
+        "barcolor-": [],
+        "piecolor-": [],
+        "----------": "----//{optional}//图例字段/自定义------",
+        "legendZD": [
+            {
+                "城市开发边界范围线外_城乡建设用地调整为非城乡建设用地": "城市开发边界范围线外_城乡建设用地调整为非城乡建设用地"
+            }, {
+                "城市开发边界范围线外_非城乡建设用地调整为城乡建设用地": "城市开发边界范围线外_非城乡建设用地调整为城乡建设用地"
+            }, {
+                "城市开发边界规模线内_城乡建设用地调整为非城乡建设用地": "城市开发边界规模线内_城乡建设用地调整为非城乡建设用地"
+            }, {
+                "城市开发边界规模线内_非城乡建设用地调整为城乡建设用地": "城市开发边界规模线内_非城乡建设用地调整为城乡建设用地"
+            }, {
+                "城市开发边界规模线外范围线内_城乡建设用地调整为非城乡建设用地": "城市开发边界规模线外范围线内_城乡建设用地调整为非城乡建设用地"
+            }, {
+                "城市开发边界规模线外范围线内_非城乡建设用地调整为城乡建设用地": "城市开发边界规模线外范围线内_非城乡建设用地调整为城乡建设用地"
+            }
+        ],
+        "------------": "----////{optional}//行政区字段------",
+        "xzq": "行政区",
+        "---------------": "----//{optional,有xzq时才有效}//行政区单选/多选------",
+        "XZQSingle": true,
+        "--------------": "----//{默认true}//是否有合计项------",
+        "isSum": true,
+        "----------------": "----//{默认true}//是否按行政区展示柱图------",
+        "barTypeXZQ": false,
+        "-----------------": "----//{optional}//饼图展示字段------",
+        "pieWord": "",
+        "------------------": "----/{optional}//过滤字段/如------",
+        "filter": ["总计"],
+        "-------------------": "----//{optional}//指定请求地址/对应主配置文件的地址名称------",
+        "soe": "ReadStatisticsResult",
+        "tableTH": [
+            {
+                "field": "行政区",
+                "label": "范围",
+                "prop":"region"
+            }, {
+                "field": "",
+                "label": "城市开发边界范围线外",
+                "childlist": [
+                    {
+                        "field": "城市开发边界范围线外_城乡建设用地调整为非城乡建设用地",
+                        "label": "城乡建设用地调整为非城乡建设用地",
+                        "prop":"area_1"
+                    }, {
+                        "field": "城市开发边界范围线外_非城乡建设用地调整为城乡建设用地",
+                        "label": "非城乡建设用地调整为城乡建设用地",
+                        "prop":"area_2"
+                    }
+                ]
+            }, {
+                "field": "",
+                "label": "城市开发边界规模线内",
+                "childlist": [
+                    {
+                        "field": "城市开发边界规模线内_城乡建设用地调整为非城乡建设用地",
+                        "label": "城乡建设用地调整为非城乡建设用地",
+                        "prop":"area_3"
+                    }, {
+                        "field": "城市开发边界规模线内_非城乡建设用地调整为城乡建设用地",
+                        "label": "非城乡建设用地调整为城乡建设用地",
+                        "prop":"area_4"
+                    }
+                ]
+            }, {
+                "field": "",
+                "label": "城市开发边界规模线外范围线内",
+                "childlist": [
+                    {
+                        "field": "城市开发边界规模线外范围线内_城乡建设用地调整为非城乡建设用地",
+                        "label": "城乡建设用地调整为非城乡建设用地",
+                        "prop":"area_5"
+                    }, {
+                        "field": "城市开发边界规模线外范围线内_非城乡建设用地调整为城乡建设用地",
+                        "label": "非城乡建设用地调整为城乡建设用地",
+                        "prop":"area_6"
+                    }
+                ]
+            }
+        ]
+    },
+    "statistics_tgtzqk": {
+        "name":"土规调整情况",
+        "url":"https://192.168.5.163/NJDGHY/Handlers/StatsForJsonHandler.ashx?type=tgtzqk",
+        "color":"",
+        "visibleLayer":"",
+        "----": "---------方案名称------",
+        "SchemeID": "TZ_tgtzqk",
+
+        "------": "----SchemeName/tableName-----方案名称//{optional}//请求关键字，默认SchemeName------",
+        "keyword": "SchemeName",
+
+        "--------": "----地图服务、支持多个------",
+        "mapServer": [],
+        "bartitle": "单位：公顷",
+        "pietitle": "",
+        "barcolor-": [],
+        "piecolor-": [],
+
+        "----------": "----//{optional}//图例字段/自定义------",
+
+        "legendZD": [
+            {
+                "调入用地": "调入用地_两规均为非建设用地+调入用地_土规非建设,城规建设"
+            }, {
+                "调出用地": "调出用地_两规均为建设用地+调出用地_土规建设,城规非建设"
+            }
+        ],
+
+        "------------": "----////{optional}//行政区字段------",
+        "xzq": "行政区",
+
+        "---------------": "----//{optional,有xzq时才有效}//行政区单选/多选------",
+        "XZQSingle": true,
+
+        "--------------": "----//{默认true}//是否有合计项------",
+        "isSum": true,
+
+        "----------------": "----//{默认true}//是否按行政区展示柱图------",
+        "barTypeXZQ": true,
+
+        "-----------------": "----//{optional}//饼图展示字段------",
+        "pieWord": "",
+
+        "------------------": "----/{optional}//过滤字段/如------",
+        "filter": ["总计"],
+
+        "-------------------": "----//{optional}//指定请求地址/对应主配置文件的地址名称------",
+        "soe": "ReadStatisticsResult",
+
+        "tableTH": [
+            {
+                "field": "行政区",
+                "label": "行政区",
+                "prop":"region"
+            }, {
+                "field": "",
+                "label": "调入用地",
+                "childlist": [
+                    {
+                        "field": "调入用地_两规均为非建设用地",
+                        "label": "两规均为非建设用地（公顷）",
+                        "prop":"area_1"
+                    }, {
+                        "field": "调入用地_土规非建设,城规建设",
+                        "label": "土规非建设 城规建设（公顷）",
+                        "prop":"area_2"
+                    }
+                ]
+            }, {
+                "field": "",
+                "label": "调出用地",
+                "childlist": [
+                    {
+                        "field": "调出用地_两规均为建设用地",
+                        "label": "两规均为建设用地（公顷）",
+                        "prop":"area_3"
+                    }, {
+                        "field": "调出用地_土规建设,城规非建设",
+                        "label": "土规建设 城规非建设（公顷）",
+                        "prop":"area_4"
+                    }
+                ]
+            }
+        ]
+    },
+    "statistics_cxghyzt": {
+        "name":"城乡规划一张图",
+        "url":"https://192.168.5.163/NJDGHY/Handlers/StatsForJsonHandler.ashx?type=csghydjg",
+        "visibleLayer":"",
+        "SchemeID": "TZ_csghydjg",
+        "keyword": "SchemeName",
+        "xzq": "行政区",
+        "XZQSingle": true,
+        "isSum": true,
+        "barTypeXZQ": false,
+
+        "-----------------": "----//{optional}//饼图展示字段------",
+        "pieword": "面积",
+        "filter": ["总计"],
+
+        "-------------------": "----//{optional}//指定请求地址/对应主配置文件的地址名称------",
+        "soe": "ReadStatisticsResult",
+        "typeList":["typeList"],
+        "tableTH": [
+            {
+                "field": "name",
+                "label": "用地类型",
+                "prop":"type"
+            }, {
+                "field": "code",
+                "label": "用地代码",
+                "prop":"num"
+            }, {
+                "field": "个数",
+                "label": "图斑个数",
+                "prop":"count"
+            }, {
+                "field": "面积",
+                "label": "面积(平方米)",
+                "prop":"m2"
+            }, {
+                "field": "面积",
+                "label": "面积(公顷)",
+                "prop":"ha"
+            }, {
+                "field": "占比",
+                "label": "占比",
+                "prop":"per"
+            }
+        ]
+    },
+    "-----------------": "----//{optional}//土地用途区------",
+    "statistics_tdytq": {
+        "name":"土地用途区",
+        "url":"https://192.168.5.163/NJDGHY/Handlers/StatsForJsonHandler.ashx?type=tdlygnqtj",
+        "visibleLayer":"",
+        "SchemeID": "TZ_tdlygnqtj",
+        "keyword": "SchemeName",
+        "xzq": "行政区",
+        "XZQSingle": true,
+        "isSum": true,
+        "barTypeXZQ": false,
+        "pieword": "面积",
+        "filter": ["总计"],
+        "soe": "ReadStatisticsResult",
+        "tableTH": [
+            {
+                "field": "name",
+                "label": "用地类型",
+                "prop":"type"
+            }, {
+                "field": "code",
+                "label": "用地代码",
+                "prop":"num"
+            }, {
+                "field": "个数",
+                "label": "图斑个数",
+                "prop":"count"
+            }, {
+                "field": "面积",
+                "label": "面积(平方米)",
+                "prop":"m2"
+            }, {
+                "field": "面积",
+                "label": "面积(公顷)",
+                "prop":"ha"
+            }, {
+                "field": "占比",
+                "label": "占比",
+                "prop":"per"
+            }
+        ]
+    },
+    "statistics_tdlygh":{
+        "name":"土地利用规划",
+        "url":"https://192.168.5.163/NJDGHY/Handlers/StatsForJsonHandler.ashx?type=kzxzl",
+        "color":"",
+        "visibleLayer":"",
+        "SchemeID": "TZ_tdlygnqtj",
+        "keyword": "SchemeName",
+        "xzq": "行政区",
+        "XZQSingle": true,
+        "isSum": true,
+        "barTypeXZQ": false,
+        "pieword": "面积",
+        "filter": ["总计"],
+        "soe": "ReadStatisticsResult",
+        "tableTH": [
+            {
+                "field": "",
+                "label": "行政区",
+                "prop":"region"
+            }, {
+                "field": "",
+                "label": "城乡建设用地",
+                "childlist":[
+                    {
+                        "field": "",
+                        "label": "面积（公顷）",
+                        "prop":"area_1"
+                    },
+                    {
+                        "field": "",
+                        "label": "比例（%）",
+                        "prop":"per_1"
+                    }
+                ]
+            }, {
+                "field": "",
+                "label": "非城乡建设用地",
+                "childlist":[
+                    {
+                        "field": "",
+                        "label": "有条件建设区",
+                        "childlist":[
+                            {
+                                "field": "",
+                                "label": "面积（公顷）",
+                                "prop":"area_2"
+                            },
+                            {
+                                "field": "",
+                                "label": "比例（%）",
+                                "prop":"per_2"
+                            }
+                        ]
+                    },
+                    {
+                        "field": "",
+                        "label": "基本农田",
+                        "childlist":[
+                            {
+                                "field": "",
+                                "label": "面积（公顷）",
+                                "prop":"area_3"
+                            },
+                            {
+                                "field": "",
+                                "label": "比例（%）",
+                                "prop":"per_3"
+                            }
+                        ]
+                    },
+                    {
+                        "field": "",
+                        "label": "其它非建设用地",
+                        "childlist":[
+                            {
+                                "field": "",
+                                "label": "面积（公顷）",
+                                "prop":"area_4"
+                            },
+                            {
+                                "field": "",
+                                "label": "比例（%）",
+                                "prop":"per_4"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "statistics_gzfqgh": {
+        "name":"管制分区规划",
+        "url":"https://192.168.5.163/NJDGHY/Handlers/StatsForJsonHandler.ashx?type=gzfqghtj",
+        "visibleLayer":"",
+        "color":"",
+        "SchemeID": "TZ_gzfqghtj",
+        "keyword": "SchemeName",
+        "mapServer": [],
+        "legendZD": [
+            {
+                "城乡建设用地": "城乡建设用地_面积"
+            }, {
+                "非城乡建设用地": "非城乡建设用地_面积"
+            }
+        ],
+        "------------": "----////{optional}//行政区字段------",
+        "xzq": "行政区",
+        "---------------": "----//{optional,有xzq时才有效}//行政区单选/多选------",
+        "XZQSingle": true,
+        "--------------": "----//{默认true}//是否有合计项------",
+        "isSum": true,
+        "----------------": "----//{默认true}//是否按行政区展示柱图------",
+        "barTypeXZQ": false,
+        "-----------------": "----//{optional}//饼图展示字段------",
+        "pieWord": "",
+        "------------------": "----/{optional}//过滤字段/如------",
+        "filter": ["总计"],
+        "-------------------": "----//{optional}//指定请求地址/对应主配置文件的地址名称------",
+        "soe": "ReadStatisticsResult",
+        "tableTH": [
+            {
+                "field": "行政区",
+                "label": "行政区",
+                "prop":"region"
+            }, {
+                "field": "",
+                "label": "城乡建设用地",
+                "childlist": [
+                    {
+                        "field": "城乡建设用地_个数",
+                        "label": "图斑数量（个）",
+                        "prop":"num_1"
+                    }, {
+                        "field": "城乡建设用地_面积",
+                        "label": "图斑面积（公顷）",
+                        "prop":"area_1"
+                    }, {
+                        "field": "城乡建设用地_占比",
+                        "label": "面积比例（%）",
+                        "prop":"per_1"
+                    }
+                ]
+            }, {
+                "field": "",
+                "label": "非城乡建设用地",
+                "childlist": [
+                    {
+                        "field": "非城乡建设用地_个数",
+                        "label": "图斑数量（个）",
+                        "prop":"num_2"
+                    }, {
+                        "field": "非城乡建设用地_面积",
+                        "label": "图斑面积（公顷）",
+                        "prop":"area_2"
+                    }, {
+                        "field": "非城乡建设用地_占比",
+                        "label": "面积比例（%）",
+                        "prop":"per_2"
+                    }
+                ]
+            }
+        ]
+    },
+    "statistics_sthx": {
+        "name":"生态红线",
+        "url":"https://192.168.5.163/NJDGHY/Handlers/StatsForJsonHandler.ashx?type=sthxtj",
+        "visibleLayer":"省级生态红线区域（2013批复稿）",
+        "color":"",
+        "SchemeID": "TZ_sthxtj",
+        "keyword": "SchemeName",
+        "legendZD": [
+            {
+                "一级管控区": "一级管控区_面积"
+            }, {
+                "二级管控区": "二级管控区_面积"
+            }
+        ],
+        "------------": "----////{optional}//行政区字段------",
+        "xzq": "行政区",
+        "---------------": "----//{optional,有xzq时才有效}//行政区单选/多选------",
+        "XZQSingle": true,
+        "--------------": "----//{默认true}//是否有合计项------",
+        "isSum": true,
+        "----------------": "----//{默认true}//是否按行政区展示柱图------",
+        "barTypeXZQ": false,
+        "-----------------": "----//{optional}//饼图展示字段------",
+        "pieWord": "",
+        "------------------": "----/{optional}//过滤字段/如------",
+        "filter": ["总计"],
+
+        "-------------------": "----//{optional}//指定请求地址/对应主配置文件的地址名称------",
+        "soe": "ReadStatisticsResult",
+
+        "tableTH": [
+            {
+                "field": "行政区",
+                "label": "区属",
+                "prop":  "region"
+            }, {
+                "field": "",
+                "label": "一级管控区",
+                "childlist": [
+                    {
+                        "field": "一级管控区_个数",
+                        "label": "数量（个）",
+                        "prop":  "num_1"
+                    }, {
+                        "field": "一级管控区_面积",
+                        "label": "面积（公顷）",
+                        "prop":  "area_1"
+                    }, {
+                        "field": "一级管控区_占比",
+                        "label": "比例（%）",
+                        "prop":  "per_1"
+                    }
+                ]
+            },
+            {
+                "field": "",
+                "label": "二级管控区",
+                "childlist": [
+                    {
+                        "field": "二级管控区_个数",
+                        "label": "数量（个）",
+                        "prop":  "num_2"
+                    }, {
+                        "field": "二级管控区_面积",
+                        "label": "面积（公顷）",
+                        "prop":  "area_2"
+                    }, {
+                        "field": "二级管控区_占比",
+                        "label": "比例（%）",
+                        "prop":  "per_2"
+                    }
+                ]
+            },
+            {
+                "field": "",
+                "label": "小计",
+                "childlist": [
+                    {
+                        "field": "二级管控区_个数",
+                        "label": "数量（个）",
+                        "prop":  "num_total"
+                    }, {
+                        "field": "二级管控区_面积",
+                        "label": "面积（公顷）",
+                        "prop":  "area_total"
+                    }, {
+                        "field": "二级管控区_占比",
+                        "label": "比例（%）",
+                        "prop":  "per_total"
+                    }
+                ]
+            }
+        ]
+    }
+}

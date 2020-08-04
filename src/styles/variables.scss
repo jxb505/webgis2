@@ -1,0 +1,40 @@
+// sidebar
+$menuText: #8e9aac;
+$menuBg: #283b59;
+$menuActive: #118eea;
+$menuHover: #0079d2;
+$menuActiveText: #fff;
+$subMenuActiveText: #fff; //https://github.com/ElemeFE/element/issues/12951
+$activeColor: #118eea;
+// toolbar
+$toolbarBd: 1px solid #ccc;
+$toolItemBg: #fff;
+$toolItemHover: #bfcbd9;
+
+$subMenuBg: #283b59;
+$subMenuHover: #0079d2;
+
+$sideBarWidth: 210px;
+$taskBarWidth: 40px;
+$toolItemWidth: 110px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+    // sidebar
+    menuText: $menuText;
+    menuActiveText: $menuActiveText;
+    subMenuActiveText: $subMenuActiveText;
+    // toolbar
+    toolbarBd: $toolbarBd;
+    toolItemBg: $toolItemBg;
+    toolItemHover: $toolItemHover;
+    activeColor: $activeColor;
+    menuBg: $menuBg;
+    menuHover: $menuHover;
+    subMenuBg: $subMenuBg;
+    subMenuHover: $subMenuHover;
+    sideBarWidth: $sideBarWidth;
+    taskBarWidth: $taskBarWidth;
+    toolItemWidth: $toolItemWidth;
+}

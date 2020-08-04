@@ -1,0 +1,287 @@
+{
+  "map": {
+    "viewtype": "SceneView",
+    "type": "2D",
+    "mapOption": {
+      "viewingMode": "local"
+    },
+    "basemaps": [],
+    "groundlayer": [],
+    "operationallayers": [
+      {
+        "label": "城市精模",
+        "type": "scene",
+        "_url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/building0831/SceneServer",
+        "url":"http://192.168.7.34/other/arcgis/rest/services/Hosted/building0831/SceneServer",
+        "visible":false
+      },
+      {
+        "label": "山体模型",
+        "type": "scene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/shanti/SceneServer",
+        "visible": false
+      },
+      {
+        "label": "道路模型",
+        "type": "scene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/road0831/SceneServer",
+        "visible": false
+      },
+      {
+        "label": "树木模型",
+        "type": "scene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/shumu0831change/SceneServer",
+        "visible": false
+      },
+      {
+        "label": "街区地块模型",
+        "type": "scene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/Block0831/SceneServer",
+        "visible": false
+      },
+      {
+        "label": "水体模型",
+        "type": "scene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/shuiti/SceneServer",
+        "visible": false
+      },
+      {
+        "label": "医院A座内部",
+        "type": "scene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/inpBuildA/SceneServer",
+        "visible": false
+      },
+      {
+        "label": "医院A座内部九楼机电层",
+        "type": "scene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/inpBuildA9F_elec/SceneServer",
+        "visible": false
+      },
+      {
+        "label": "医院B座内部",
+        "type": "scene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/inpBuildB/SceneServer",
+        "visible": false
+      },
+      {
+        "label": "医院B座内部九楼机电层",
+        "type": "scene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/inpBuildB9F_elec/SceneServer",
+        "visible": true
+      },
+      {
+        "label": "医院外立面",
+        "type": "scene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/yiyuanzhengti_zch1G/SceneServer",
+        "visible": true
+      },
+      {
+        "label": "医院A座内部九楼机建筑",
+        "type": "buildingscene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/buildA_9fArch/SceneServer",
+        "visible": true
+      },
+      {
+        "label": "医院B座内部九楼机建筑",
+        "type": "buildingscene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/buildB_9fArch/SceneServer",
+        "visible": true
+      },
+      {
+        "label": "单体建筑模型",
+        "type": "buildingscene",
+        "url": "https://server01.njcim.gis/arcgis/rest/services/Hosted/12323142/SceneServer",
+        "visible": true
+      }
+    ]
+  },
+  "webService": {
+    "建设用地审批": "http://192.168.100.55:6080/arcgis/rest/services/%E5%9C%B0%E6%94%BF%E9%A1%B9%E7%9B%AE/%E5%BB%BA%E8%AE%BE%E7%94%A8%E5%9C%B0%E6%8A%A5%E6%89%B9/MapServer",
+    "titldemo": "http://cache1.arcgisonline.cn/arcgis/rest/services/SimpleFeature/ChinaBoundaryLine/MapServer",
+    "ReadStatisticsResult": {
+      "url": "http://192.168.100.55:6080/arcgis/rest/services/XZQ_QJ/MapServer/exts/GeoToolsSOE/ReadStatisticsResult"
+    },
+    "ThemticCarto": {
+      "describe": "专题制图soe接口地址",
+      "url": "http://192.168.100.123:6080/arcgis/rest/services/SampleWorldCities/MapServer/exts/DLGAnalysisRestSOE/ThemticCarto"
+    }
+  },
+  "widgetOnScreen": {
+    "widgets": [
+      {
+        "id": "sidebar",
+        "uri": "/layout/theme_origin/components/Sidebar/",
+        "hasConfig": true,
+        "type": "container",
+        "label": "主菜单",
+        "icon": "example"
+      },
+      {
+        "id": "navbar",
+        "uri": "/layout/theme_origin/components/Navbar/",
+        "hasConfig": false,
+        "label": "导航栏"
+      },
+      {
+        "id": "taskbar",
+        "uri": "/layout/theme_origin/components/Taskbar/",
+        "hasConfig": false,
+        "label": "任务栏"
+      },
+      {
+        "id": "toolbox",
+        "label": "工具箱",
+        "uri": "/components/Toolbox/",
+        "hasConfig": true,
+        "viewtype": "2D",
+        "position": "top-right"
+      },
+      {
+        "id": "identifysearch",
+        "label": "i查询",
+        "uri": "/components/IdentifySearch/",
+        "hasConfig": true,
+        "inPanel": true,
+        "viewtype": "2D",
+        "panel": {
+          "position": {
+            "right": 150,
+            "top": 100,
+            "width": 300,
+            "height": 500
+          }
+        },
+        "iconfont": "ds-isearch",
+        "position": "top-right"
+      },
+      {
+        "id": "mapcontrolbox",
+        "label": "地图控件",
+        "viewtype": "3D",
+        "uri": "/components/MapControlBox/",
+        "hasConfig": false,
+        "position": "right-top"
+      },
+      {
+        "id": "rightmenu",
+        "label": "右侧菜单",
+        "viewtype": "3D",
+        "uri": "/components/RightMenu/",
+        "hasConfig": false,
+        "position": "right-top"
+      },
+      {
+        "id": "wrapper",
+        "label": "底图切换",
+        "uri": "/components/Wrapper/",
+        "hasConfig": false,
+        "position": "bottom-right"
+      },
+      {
+        "id": "compass",
+        "label": "指南针",
+        "uri": "/components/Compass/",
+        "hasConfig": false,
+        "position": "right-bottom"
+      },
+      {
+        "id": "home",
+        "label": "全图",
+        "uri": "/components/Home/",
+        "hasConfig": false,
+        "inPanel": true,
+        "viewtype": "2D",
+        "iconfont": "ds-map_tool_quantu",
+        "position": "right-bottom"
+      },
+      {
+        "id": "layerlist",
+        "label": "图层列表",
+        "uri": "/components/Layerlist/",
+        "hasConfig": false,
+        "inPanel": true,
+        "viewtype": "2D",
+        "panel": {
+          "position": {
+            "right": 50,
+            "bottom": 200,
+            "width": 300,
+            "height": 300
+          }
+        },
+        "iconfont": "ds-map_tool_tucen",
+        "position": "right-bottom"
+      },
+      {
+        "id": "splitmap",
+        "label": "分屏",
+        "uri": "/components/SplitMap/",
+        "hasConfig": false,
+        "inPanel": true,
+        "viewtype": "2D",
+        "panel": {
+          "position": {
+            "right": 60,
+            "bottom": 290,
+            "width": 300,
+            "height": 500
+          }
+        },
+        "iconfont": "ds-map_tool_fenping",
+        "position": "right-bottom"
+      },
+      {
+        "id": "bulletin",
+        "label": "公告栏",
+        "uri": "/components/Bulletin/",
+        "hasConfig": false,
+        "inPanel": true,
+        "viewtype": "2D",
+        "panel": {
+          "position": {
+            "right": 50,
+            "bottom": 150,
+            "width": 300,
+            "height": 400
+          }
+        },
+        "iconfont": "ds-shebeixinxi",
+        "position": "right-bottom"
+      },
+      {
+        "id": "legend",
+        "label": "图例",
+        "uri": "/components/Legend/",
+        "hasConfig": true,
+        "inPanel": true,
+        "viewtype": "2D",
+        "panel": {
+          "position": {
+            "right": 50,
+            "bottom": 100,
+            "width": 300,
+            "height": 400
+          }
+        },
+        "iconfont": "ds-map_tool_tuli",
+        "position": "right-bottom"
+      },
+      {
+        "id": "viewswitch",
+        "label": "视图改变",
+        "uri": "/components/ViewSwitch/",
+        "hasConfig": false,
+        "position": "right-bottom"
+      },
+      {
+        "id": "bottomtoolbar",
+        "viewtype": "3D",
+        "label": "底部菜单",
+        "uri": "/components/BottomToolbar/",
+        "hasConfig": false,
+        "position": "bottom-right"
+      }
+    ],
+    "bake": []
+  }
+}

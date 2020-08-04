@@ -1,0 +1,14 @@
+{
+    "fieldObj":{
+        "ydmj_min": "",
+        "ydmj_max": "",
+        "jzxg_min": "最小建筑高度",
+        "jzxg_max": "最大建筑高度",
+        "jzmd_min": "建筑密度",
+        "jzmd_max": "建筑密度",
+        "rjl_min": "最小容积率",
+        "rjl_max": "最大容积率",
+        "ldl_min": "绿地率",
+        "ldl_max": "绿地率"
+      }
+}
