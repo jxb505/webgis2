@@ -8,14 +8,6 @@ module.exports = {
     presets: [
         ['@vue/app', {
             modules: 'cjs'
-        }, "@babel/env", {
-            "targets": {
-                "chrome": "58",
-                "ie": "10"
-            },
-            "useBuiltIns": "usage",
-            "corejs": "2" //主要就是这里， 写2 或者 3 根据你安装的版本
-
         }]
     ]
 }
